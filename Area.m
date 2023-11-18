@@ -94,3 +94,5 @@ r1_annulus = input('Enter the outer radius of the annulus: ');
 r2_annulus = input('Enter the inner radius of the annulus: ');
 area_annulus = pi * (r1_annulus^2 - r2_annulus^2);
 fprintf('The area of the annulus is: %.2f\n', area_annulus);
+
+_________________________________________________________________________________________
