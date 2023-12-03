@@ -25,15 +25,13 @@ grid on;
 %%
 % Multiple Linear Regression
 
-% Generate random data for three independent variables (X1, X2, X3) and one dependent variable (Y)
-rng(123); % Set seed for reproducibility
+rng(123); % Seed for reproducibility
 num_samples = 100;
 X1 = randn(num_samples, 1);
 X2 = randn(num_samples, 1);
 X3 = randn(num_samples, 1);
 Y = 2*X1 + 3*X2 - 0.5*X3 + 5 + 0.5*randn(num_samples, 1);
 
-% Create a table for better data organization
 data = table(X1, X2, X3, Y, 'VariableNames', {'X1', 'X2', 'X3', 'Y'});
 
 % Fit multiple linear regression model
