@@ -3,7 +3,6 @@
 
 x = 1:25;
 y = x*2.7 + randn(size(x))*0.5;
-
 mdl = fitlm(x', y');
 
 % Data points
